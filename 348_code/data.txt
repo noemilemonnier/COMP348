@@ -1,0 +1,20 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf100
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c100000;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl312\slmult1\partightenfactor0
+
+\f0\fs24 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 0002: Bread, CERL, 28NOV17 \cb1 \
+\cb3 0004: Milk, DAIR, 07DEC18 \cb1 \
+\cb3 0003: CheeseMozar, DAIR, 01SEP18 \cb1 \
+\cb3 0008: PotatoeRed, VEGT, 23NOV17 \cb1 \
+\cb3 0004: YOGORT, DAR, 03JAN18 \cb1 \
+\cb3 0008: PotatoeRed, VEGT, 12DEC17 \cb1 \
+\cb3 0002: Bread, REFF, 28JUN19 \cb1 \
+\cb3 0005: Bacon, REFF, 10JUL20 \cb1 \
+\cb3 0002: Bread, REFF
+\f1 \cb1 \
+}

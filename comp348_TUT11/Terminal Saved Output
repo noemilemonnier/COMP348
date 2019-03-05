@@ -1,0 +1,77 @@
+Last login: Wed Nov 22 19:08:03 on console
+noemis-mbp:~ noemilemonnier$ gcc -Wall tut11_comp348
+ld: warning: ignoring file tut11_comp348, file was built for unsupported file format ( 0x23 0x69 0x6E 0x63 0x6C 0x75 0x64 0x65 0x20 0x3C 0x73 0x74 0x64 0x69 0x6F 0x2E ) which is not the architecture being linked (x86_64): tut11_comp348
+Undefined symbols for architecture x86_64:
+  "_main", referenced from:
+     implicit entry/start for main executable
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+noemis-mbp:~ noemilemonnier$ gcc -Wall tut11_comp348
+ld: warning: ignoring file tut11_comp348, file was built for unsupported file format ( 0x23 0x69 0x6E 0x63 0x6C 0x75 0x64 0x65 0x20 0x3C 0x73 0x74 0x64 0x69 0x6F 0x2E ) which is not the architecture being linked (x86_64): tut11_comp348
+Undefined symbols for architecture x86_64:
+  "_main", referenced from:
+     implicit entry/start for main executable
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+noemis-mbp:~ noemilemonnier$ gcc -Wall tut11_comp348
+ld: warning: ignoring file tut11_comp348, file was built for unsupported file format ( 0x23 0x69 0x6E 0x63 0x6C 0x75 0x64 0x65 0x20 0x3C 0x73 0x74 0x64 0x69 0x6F 0x2E ) which is not the architecture being linked (x86_64): tut11_comp348
+Undefined symbols for architecture x86_64:
+  "_main", referenced from:
+     implicit entry/start for main executable
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+noemis-mbp:~ noemilemonnier$ gcc -Wall tut11_comp348.c -o 
+clang: error: argument to '-o' is missing (expected 1 value)
+noemis-mbp:~ noemilemonnier$ gcc -Wall tut11_comp348.c -o tutorial11.app
+noemis-mbp:~ noemilemonnier$ ./tutorial11.app
+c is  L
+c is 76 in ASCIInoemis-mbp:~ noemilemonnier$ gcc -Wall tut11_comp348B.c -o tutorial11B.app
+tut11_comp348B.c:6:2: warning: implicitly declaring library function 'strcpy'
+      with type 'char *(char *, const char *)' [-Wimplicit-function-declaration]
+        strcpy(computers, "ComPuters");
+        ^
+tut11_comp348B.c:6:2: note: include the header <string.h> or explicitly provide
+      a declaration for 'strcpy'
+1 warning generated.
+noemis-mbp:~ noemilemonnier$ gcc -Wall tut11_comp348B.c -o tutorial11B.app
+noemis-mbp:~ noemilemonnier$ .\tutorial11B.app
+-bash: .tutorial11B.app: command not found
+noemis-mbp:~ noemilemonnier$ ./tutorial11B.app
+ComPuters
+ noemis-mbp:~ noemilemonnier$ gcc -Wall tut11_comp348B.c -o tutorial11B.app
+noemis-mbp:~ noemilemonnier$ ./tutorial11B.app
+
+ noemis-mbp:~ noemilemonnier$ gcc -Wall tut11_comp348B.c -o tutorial11B.app
+noemis-mbp:~ noemilemonnier$ ./tutorial11B.app
+ComPuters
+ noemis-mbp:~ noemilemonnier$ gcc -Wall tut11_comp348B.c -o tutorial11B.app
+noemis-mbp:~ noemilemonnier$ ./tutorial11B.app
+CELLPHONE
+ ComPuters
+ C
+o
+m
+P
+u
+t
+e
+r
+s
+noemis-mbp:~ noemilemonnier$ gcc -Wall tut11_comp348B.c -o tutorial11B.app
+noemis-mbp:~ noemilemonnier$ ./tutorial11B.app
+CELLPHONE
+ Abort trap: 6
+noemis-mbp:~ noemilemonnier$ gcc -Wall tut11_comp348B.c -o tutorial11B.app
+noemis-mbp:~ noemilemonnier$ ./tutorial11B.app
+CELLPHONE
+ ComPuters
+ C
+o
+m
+P
+u
+t
+e
+r
+s
+noemis-mbp:~ noemilemonnier$ 

@@ -1,0 +1,226 @@
+Last login: Thu Nov 16 15:03:05 on ttys000
+noemis-mbp:~ noemilemonnier$ gcc -Wall Untitled.c -o tutorial10.app
+noemis-mbp:~ noemilemonnier$ gcc -Wall Untitled.c -o tutorial10.app
+Untitled.c:20:7: warning: multiple unsequenced modifications to 'p1'
+      [-Wunsequenced]
+        p1 = ++p1;
+           ~ ^
+1 warning generated.
+noemis-mbp:~ noemilemonnier$ ./tutorial10.app
+n1 = 30 
+n2 = 40 
+n3 = 50 
+Location of n1: 0x7fff52636b98  
+Location of n2: 0x7fff52636b94  
+Location stored in p1 is: 0x7fff52636b98  
+Value of the location stored: 30  
+Location stored in p1 is: 0x7fff52636b9c  
+Value of the location stored: 0  
+Size of an int: 4 
+noemis-mbp:~ noemilemonnier$ gcc -Wall Untitled.c -o tutorial10.app
+Untitled.c:31:7: warning: multiple unsequenced modifications to 'p1'
+      [-Wunsequenced]
+        p1 = ++p1;
+           ~ ^
+1 warning generated.
+noemis-mbp:~ noemilemonnier$ ./tutorial10.app
+n1 = 30 
+n2 = 40 
+n3 = 50 
+Location of n1: 0x7fff54d7cb98  
+Location of n2: 0x7fff54d7cb94  
+Location of n3: 0x7fff54d7cb90  
+Location stored in p1 is: 0x7fff54d7cb98  
+Value of the location stored: 30  
+moving the pointer p1 to the next location in memory...
+Location stored in p1 is: 0x7fff54d7cb9c  
+Value of the location stored: 0  
+moving the pointer p1 to the next location in memory...
+Location stored in p1 is: 0x7fff54d7cba0  
+Value of the location stored: 1423428528  
+Size of an int: 4 
+noemis-mbp:~ noemilemonnier$ gcc -Wall Untitled.c -o tutorial10.app
+Untitled.c:31:7: warning: multiple unsequenced modifications to 'p1'
+      [-Wunsequenced]
+        p1 = --p1;
+           ~ ^
+1 warning generated.
+noemis-mbp:~ noemilemonnier$ ./tutorial10.app
+n1 = 30 
+n2 = 40 
+n3 = 50 
+Location of n1: 0x7fff57e97b98  
+Location of n2: 0x7fff57e97b94  
+Location of n3: 0x7fff57e97b90  
+Location stored in p1 is: 0x7fff57e97b98  
+Value of the location stored: 30  
+moving the pointer p1 to the next location in memory...
+Location stored in p1 is: 0x7fff57e97b94  
+Value of the location stored: 40  
+moving the pointer p1 to the next location in memory...
+Location stored in p1 is: 0x7fff57e97b90  
+Value of the location stored: 50  
+Size of an int: 4 
+noemis-mbp:~ noemilemonnier$ gcc -Wall Untitled.c -o tutorial10.app
+Untitled.c:31:7: warning: multiple unsequenced modifications to 'p1'
+      [-Wunsequenced]
+        p1 = --p1;
+           ~ ^
+1 warning generated.
+noemis-mbp:~ noemilemonnier$ ./tutorial10.app
+n1 = 30 
+n2 = 40 
+n3 = 50 
+Location of n1: 0x7fff53eb6b98  
+Location of n2: 0x7fff53eb6b94  
+Location of n3: 0x7fff53eb6b90  
+Location stored in p1 is: 0x7fff53eb6b98  
+Value of the location stored: 30  
+moving the pointer p1 to the next location in memory...
+Location stored in p1 is: 0x7fff53eb6b94  
+Value of the location stored: 40  
+moving the pointer p1 to the next location in memory...
+Location stored in p1 is: 0x7fff53eb6b90  
+Value of the location stored: 50  
+Size of an int: 4 
+n1 = 30 
+n2 = 40 
+n3 = 777 
+Location of n1: 0x7fff53eb6b98  
+Location of n2: 0x7fff53eb6b94  
+Location of n3: 0x7fff53eb6b90  
+noemis-mbp:~ noemilemonnier$ gcc -Wall Untitled.c -o tutorial10.app
+Untitled.c:31:7: warning: multiple unsequenced modifications to 'p1'
+      [-Wunsequenced]
+        p1 = --p1;
+           ~ ^
+1 warning generated.
+noemis-mbp:~ noemilemonnier$ ./tutorial10.app
+n1 = 30 
+n2 = 40 
+n3 = 50 
+Location of n1: 0x7fff54ad2b98  
+Location of n2: 0x7fff54ad2b94  
+Location of n3: 0x7fff54ad2b90  
+Location stored in p1 is: 0x7fff54ad2b98  
+Value of the location stored: 30  
+moving the pointer p1 to the next location in memory...
+Location stored in p1 is: 0x7fff54ad2b94  
+Value of the location stored: 40  
+moving the pointer p1 to the next location in memory...
+Location stored in p1 is: 0x7fff54ad2b90  
+Value of the location stored: 50  
+Size of an int: 4 
+n1 = 30 
+n2 = 40 
+n3 = 777 
+noemis-mbp:~ noemilemonnier$ gcc -Wall Untitled.c -o tutorial10.app
+Untitled.c:31:7: warning: multiple unsequenced modifications to 'p1'
+      [-Wunsequenced]
+        p1 = --p1;
+           ~ ^
+Untitled.c:51:5: warning: incompatible pointer to integer conversion assigning
+      to 'int' from 'int *'; dereference with * [-Wint-conversion]
+        *p1= p1 + 1;
+           ^ ~~~~~~
+             *(    )
+Untitled.c:44:2: warning: expression result unused [-Wunused-value]
+        *p1++;
+        ^~~~~
+3 warnings generated.
+noemis-mbp:~ noemilemonnier$ ./tutorial10.app
+n1 = 30 
+n2 = 40 
+n3 = 50 
+Location of n1: 0x7fff5340ab98  
+Location of n2: 0x7fff5340ab94  
+Location of n3: 0x7fff5340ab90  
+Location stored in p1 is: 0x7fff5340ab98  
+Value of the location stored: 30  
+moving the pointer p1 to the next location in memory...
+Location stored in p1 is: 0x7fff5340ab94  
+Value of the location stored: 40  
+moving the pointer p1 to the next location in memory...
+Location stored in p1 is: 0x7fff5340ab90  
+Value of the location stored: 50  
+Size of an int: 4 
+n1 = 30 
+n2 = 40 
+n3 = 333 
+n1 = 30 
+n2 = 333 
+n3 = 333 
+n1 = 30 
+n2 = 111 
+n3 = 333 
+noemis-mbp:~ noemilemonnier$ gcc -Wall Untitled.c -o tutorial10.app
+Untitled.c:31:7: warning: multiple unsequenced modifications to 'p1'
+      [-Wunsequenced]
+        p1 = --p1;
+           ~ ^
+Untitled.c:51:5: warning: incompatible pointer to integer conversion assigning
+      to 'int' from 'int *'; dereference with * [-Wint-conversion]
+        *p1= p1 + 1;
+           ^ ~~~~~~
+             *(    )
+Untitled.c:44:2: warning: expression result unused [-Wunused-value]
+        *p1++;
+        ^~~~~
+3 warnings generated.
+noemis-mbp:~ noemilemonnier$ ./tutorial10.app
+n1 = 30 
+n2 = 40 
+n3 = 50 
+Location of n1: 0x7fff5a445b98  
+Location of n2: 0x7fff5a445b94  
+Location of n3: 0x7fff5a445b90  
+Location stored in p1 is: 0x7fff5a445b98  
+Value of the location stored: 30  
+moving the pointer p1 to the next location in memory...
+Location stored in p1 is: 0x7fff5a445b94  
+Value of the location stored: 40  
+moving the pointer p1 to the next location in memory...
+Location stored in p1 is: 0x7fff5a445b90  
+Value of the location stored: 50  
+Size of an int: 4 
+n1 = 30 
+n2 = 40 
+n3 = 333 
+n1 = 30 
+n2 = 222 
+n3 = 333 
+n1 = 30 
+n2 = 111 
+n3 = 333 
+noemis-mbp:~ noemilemonnier$ gcc -Wall Untitled.c -o tutorial10.app
+Untitled.c:31:7: warning: multiple unsequenced modifications to 'p1'
+      [-Wunsequenced]
+        p1 = --p1;
+           ~ ^
+1 warning generated.
+noemis-mbp:~ noemilemonnier$ ./tutorial10.app
+n1 = 30 
+n2 = 40 
+n3 = 50 
+Location of n1: 0x7fff53438b98  
+Location of n2: 0x7fff53438b94  
+Location of n3: 0x7fff53438b90  
+Location stored in p1 is: 0x7fff53438b98  
+Value of the location stored: 30  
+moving the pointer p1 to the next location in memory...
+Location stored in p1 is: 0x7fff53438b94  
+Value of the location stored: 40  
+moving the pointer p1 to the next location in memory...
+Location stored in p1 is: 0x7fff53438b90  
+Value of the location stored: 50  
+Size of an int: 4 
+n1 = 30 
+n2 = 40 
+n3 = 333 
+n1 = 30 
+n2 = 222 
+n3 = 333 
+n1 = 111 
+n2 = 222 
+n3 = 333 
+noemis-mbp:~ noemilemonnier$ $
